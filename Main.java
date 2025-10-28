@@ -7,7 +7,8 @@ public class Main {
             int price = scanner.nextInt();
     System.out.print("Введите вес товара (в кг.):");
             int weight = scanner.nextInt();
-            int tax = Import.calculatedTax(price, weight);
+            int tax = CalculateCustoms.calculateCustoms(price, weight);
         System.out.println("Размер пошлины:" +tax+ "(в руб.)");
+        return;
     }
 }
